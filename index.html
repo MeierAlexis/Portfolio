@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Meier Alexis</title>
+    <script src="https://kit.fontawesome.com/59b60cb642.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <nav class="nav active">
+        <ul class="sidebar">
+            <li onclick=hiddenSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960"
+                        width="26">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#my-projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+
+        <ul class="links">
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#about-me">About Me</a></li>
+            <li class="hideOnMobile"><a href="#my-skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#my-projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#contact-me">Contact</a></li>
+            <li class="menu-button" onclick=showSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                        viewBox="0 -960 960 960" width="26">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+</header>
+<section class="begin">
+    <div class="home" id="home">
+        <h1>Hello, I'm <span class="my-name">Alexis Meier</span>.</h1>
+        <h2>I'm a Computer Engineering Student and Content Creator.</h2>
+        <a href="#my-projects" class="btn"> <span>View my projects</span></a>
+    </div>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+
+</section>
+<h3>Who I am?</h3>
+<section class="about" id="about-me">
+    <div class="Soft-skills">
+        <div class="soft">
+            <i class="fa-solid fa-check fa-3x"></i>
+            <h4 class="titles">Responsible</h4>
+        </div>
+        <div class="soft">
+            <i class=" fa-solid fa-forward fa-3x"></i>
+            <h4 class="titles">Fast</h4>
+        </div>
+        <div class="soft">
+            <i class=" fa-solid fa-user-group fa-3x"></i>
+            <h4 class="titles">Teamwork</h4>
+        </div>
+        <div class="soft">
+            <i class=" fa-solid fa-book fa-3x"></i>
+            <h4 class="titles">Knowledge</h4>
+        </div>
+    </div>
+
+    <div class="Information visible" id="about-trans">
+
+        <img src="My.svg">
+
+        <p>My name is <span class="special-text">Alexis Meier</span>, I'm from Argentina, 20 years old, <span
+                class="special-text">studying Computer Engineering, and also a
+                Contact Creator</span>. During my free time, I actively seek to improve my skills across different
+            aspects of
+            my life.</p>
+        <button class="BDW" id="openPdfButton">Download CV</button>
+    </div>
+
+
+
+</section>
+<h3 class=>My Skills</h3>
+<section id="my-skills" class="the-skills">
+    <div class="skills">
+        <div class="skill-box">
+            <span class="technology">HTML</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="technology">CSS</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="technology">C++</span>
+            <div class="skill-bar">
+                <span class="skill-per c">
+                    <span class="tooltip">60%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="technology">JS</span>
+            <div class="skill-bar">
+                <span class="skill-per js">
+                    <span class="tooltip">30%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="technology">Python</span>
+            <div class="skill-bar">
+                <span class="skill-per python">
+                    <span class="tooltip">30%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="cup">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+    </div>
+</section>
+<h3>Projects</h3>
+<section class="projects" id="my-projects">
+    <div class="project 1">
+        <img class="image_projects" src="Tetris.svg">
+        <h4>Tetris</h4>
+        <p>C++ SMFL</p>
+        <a href="https://github.com/MeierAlexis/Tetris" target="_blank"> <span><i
+                    class="fa-brands fa-github"></i></span></a>
+
+    </div>
+</section>
+<h3>Contact</h3>
+<p class="question">Have a question or want to work together?</p>
+<section class="contact" id="contact-me">
+    <form id="all-form" action="https://formsubmit.co/Alexismeier1@gmail.com" method="POST">
+        <div class="row">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="number" required>
+                <label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="email" required>
+            <label for="email"><i class="fas fa-envelope"></i>Email</label>
+        </div>
+
+        <div class="input-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message"><i class="fas fa-comments"></i>Your Message</label>
+        </div>
+
+        <button type="submit" class="submit"> <i class="fas fa-paper-plane"></i>SUBMIT</button>
+    </form>
+
+    <ul class="wrapper">
+        <li class="icon instagram">
+            <a href="https://www.instagram.com/meier.alexis" target="_blank"> <span><i
+                        class="fa-brands fa-instagram"></i></span></a>
+        </li>
+        <li class="icon github">
+            <a href="https://github.com/MeierAlexis" target="_blank"> <span><i
+                        class="fa-brands fa-github"></i></span></a>
+        </li>
+        <li class="icon youtube">
+            <a href="https://www.youtube.com/channel/UCPwI6lR-2Dwi09TwXq-ltmA" target="_blank"><span><i
+                        class="fa-brands fa-youtube"></i></span></a>
+        </li>
+        <li class="icon linkedin">
+            <a href="https://www.linkedin.com/in/alexis-meier/" target="_blank" class="button-link"><span><i
+                        class="fa-brands fa-linkedin"></i></span></a>
+
+        </li>
+    </ul>
+</section>
+<div class="back">
+    <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+            </svg></a></li>
+</div>
+</body>
+<script src="main.js"></script>
+
+</html>
